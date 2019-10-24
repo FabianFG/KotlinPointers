@@ -22,14 +22,6 @@ class CharPointer (private val data : CharArray) {
         private set
     val size : Int = data.size
 
-    operator fun plusAssign(i : Int) {
-        pos += i
-    }
-
-    operator fun minusAssign(i : Int) {
-        pos -= i
-    }
-
     operator fun inc() : CharPointer {
         pos++
         return this

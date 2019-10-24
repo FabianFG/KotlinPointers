@@ -12,14 +12,6 @@ class Pointer<T> (private val data : Array<T>) {
         private set
     val size : Int = data.size
 
-    operator fun plusAssign(i : Int) {
-        pos += i
-    }
-
-    operator fun minusAssign(i : Int) {
-        pos -= i
-    }
-
     operator fun inc() : Pointer<T> {
         pos++
         return this

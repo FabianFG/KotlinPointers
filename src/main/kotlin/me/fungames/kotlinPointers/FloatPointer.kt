@@ -23,14 +23,6 @@ class FloatPointer (private val data : FloatArray) {
         private set
     val size : Int = data.size
 
-    operator fun plusAssign(i : Int) {
-        pos += i
-    }
-
-    operator fun minusAssign(i : Int) {
-        pos -= i
-    }
-
     operator fun inc() : FloatPointer {
         pos++
         return this

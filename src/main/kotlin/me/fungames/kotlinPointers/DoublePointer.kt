@@ -22,14 +22,6 @@ class DoublePointer (private val data : DoubleArray) {
         private set
     val size : Int = data.size
 
-    operator fun plusAssign(i : Int) {
-        pos += i
-    }
-
-    operator fun minusAssign(i : Int) {
-        pos -= i
-    }
-
     operator fun inc() : DoublePointer {
         pos++
         return this

@@ -22,14 +22,6 @@ class ShortPointer (private val data : ShortArray) {
         private set
     val size : Int = data.size
 
-    operator fun plusAssign(i : Int) {
-        pos += i
-    }
-
-    operator fun minusAssign(i : Int) {
-        pos -= i
-    }
-
     operator fun inc() : ShortPointer {
         pos++
         return this

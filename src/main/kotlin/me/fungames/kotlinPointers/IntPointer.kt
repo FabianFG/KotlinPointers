@@ -22,14 +22,6 @@ class IntPointer (private val data : IntArray) {
         private set
     val size : Int = data.size
 
-    operator fun plusAssign(i : Int) {
-        pos += i
-    }
-
-    operator fun minusAssign(i : Int) {
-        pos -= i
-    }
-
     operator fun inc() : IntPointer {
         pos++
         return this

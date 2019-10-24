@@ -23,14 +23,6 @@ class ULongPointer (private val data : ULongArray) {
         private set
     val size : Int = data.size
 
-    operator fun plusAssign(i : Int) {
-        pos += i
-    }
-
-    operator fun minusAssign(i : Int) {
-        pos -= i
-    }
-
     operator fun inc() : ULongPointer {
         pos++
         return this

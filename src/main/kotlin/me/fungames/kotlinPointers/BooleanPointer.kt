@@ -22,14 +22,6 @@ class BooleanPointer (private val data : BooleanArray) {
         private set
     val size : Int = data.size
 
-    operator fun plusAssign(i : Int) {
-        pos += i
-    }
-
-    operator fun minusAssign(i : Int) {
-        pos -= i
-    }
-
     operator fun inc() : BooleanPointer {
         pos++
         return this

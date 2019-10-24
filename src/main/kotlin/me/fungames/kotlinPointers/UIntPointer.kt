@@ -23,14 +23,6 @@ class UIntPointer (private val data : UIntArray) {
         private set
     val size : Int = data.size
 
-    operator fun plusAssign(i : Int) {
-        pos += i
-    }
-
-    operator fun minusAssign(i : Int) {
-        pos -= i
-    }
-
     operator fun inc() : UIntPointer {
         pos++
         return this
