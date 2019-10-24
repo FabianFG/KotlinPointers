@@ -19,7 +19,8 @@ class FloatPointer (private val data : FloatArray) {
 
     fun asArray() = data
 
-    private var pos = 0
+    var pos = 0
+        private set
     val size : Int = data.size
 
     operator fun plusAssign(i : Int) {

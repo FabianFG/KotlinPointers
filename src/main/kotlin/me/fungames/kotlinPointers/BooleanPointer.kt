@@ -18,7 +18,8 @@ class BooleanPointer (private val data : BooleanArray) {
 
     fun asArray() = data
 
-    private var pos = 0
+    var pos = 0
+        private set
     val size : Int = data.size
 
     operator fun plusAssign(i : Int) {
